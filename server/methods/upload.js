@@ -12,9 +12,6 @@ Meteor.methods({
 			CSV().from.stream(
 				fs.createReadStream(filepath),
 				{'escape':'\\'})
-				// Marvin: first edit was the line below. You had .oDocn (looked like an accidental typo),
-				// but I've changed it to be .on here like the video. Running after this, there's a strange
-				// error having to do with what looks like reading a directory. Ho
 				.on('record',Meteor.bindEnvironment(function(row,index){
 					Address.insert({
 						'first':row[0],
