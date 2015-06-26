@@ -1,2 +1,15 @@
 # Sample meteor CSV upload and import 
-Note: This is a sample meteor CSV upload and import from the client based on George Mcknight <a href="https://youtu.be/arutBQUi1bc" target="_blank">Youtube</a> tutorial. Take note that this is not a <strong>working copy</strong>, it has errors.
+
+Thanks to Ryan Glover - <a href="http://themeteorchef.com/">The Meteor Chef</a> for the help in debugging and fixing the bugs.
+
+<p>The original source is coming from George Mcknight <a href="https://youtu.be/arutBQUi1bc" target="_blank">Youtube</a> Meteor Upload and Import CSV tutorial. </p>
+
+<p>Feel free to clone this repo for your own use.</p>
+
+<p><strong>Bug</strong>: Not working on Firefox 38 running on Ubuntu 14.04 and Windows 7 but working as expected on Chromium Ubuntu 14.04 and Windows 7. Not sure on OS X.</p>
+
+<p>If you happen to encounter the bug, please post it on issues, so that others can contribute and hopefully someone will fixed it.</p>
+
+<p><strong>Disclaimer:</strong>I am not the author of the code, credits to George Mcknight as he is the source and Ryan Glover for fixing significant bugs</p>.
+
+<p>Thanks and Happy coding!</p>
