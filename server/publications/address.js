@@ -1,3 +1,3 @@
 Meteor.publish('addresses',function(){
-	return Address.find({},{limit:100});
+	return Address.find({},{limit:1000});
 })

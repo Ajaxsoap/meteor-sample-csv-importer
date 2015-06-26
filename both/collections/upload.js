@@ -1,7 +1,7 @@
-// var store = new FS.Store.FileSystem("uploads", {path:"/imports"});
-
 Uploads = new FS.Collection('uploads', {
-	stores:[new FS.Store.FileSystem("uploads",{path: "~/uploads"})]
+	// locally: path:  ~/Documents/Meteor-Labs/meteor-sample-csv-importer/imports.
+	// remotely: /path/to/imports, relative to your domain
+	stores:[new FS.Store.FileSystem("uploads",{path: "~/Documents/Meteor-Labs/meteor-sample-csv-importer/imports"})]
 });
 
 Uploads.allow({

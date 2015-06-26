@@ -1,16 +1,21 @@
 Meteor.methods({
 	'uploadFile':function(fileid,filename){
-		// var csv = Meteor.require('CSV'); 
 		var fs = Npm.require('fs');
 		var path = Npm.require('path');
 		var file = Uploads.find({_id:fileid});
 		Meteor.setTimeout(function(){
-
-			var filepath = path.resolve('.').split('.meteor')[0];
+			// The issue was that your filepath was looking at a non-existent location. The fix was to add an imports directory to the root of your project
+			// and then do a path.join() (this combines the first value with the second) specifying the
+			// current Node processes' print working directory (or, spit out your project's root directory).
+			
+			var filepath = path.join(process.env.PWD, '/imports/uploads-' + fileid + '-' + filename);
 			CSV().from.stream(
 				fs.createReadStream(filepath),
 				{'escape':'\\'})
-				.oDocn('record',Meteor.bindEnvironment(function(row,index){
+				// Marvin: first edit was the line below. You had .oDocn (looked like an accidental typo),
+				// but I've changed it to be .on here like the video. Running after this, there's a strange
+				// error having to do with what looks like reading a directory. Ho
+				.on('record',Meteor.bindEnvironment(function(row,index){
 					Address.insert({
 						'first':row[0],
 						'last':row[1],
