@@ -6,7 +6,7 @@ Thanks to Ryan Glover - <a href="http://themeteorchef.com/">The Meteor Chef</a> 
 
 <p>Feel free to clone this repo for your own use.</p>
 
-<p><strong>Bug</strong>: Not working on Firefox 38 running on Ubuntu 14.04 and Windows 7 but working as expected on Chromium Ubuntu 14.04 and Windows 7. Not sure on OS X.</p>
+<p><strong>Bug</strong>: Nothing happens if you click the "choose file" button on Firefox 38 running on Ubuntu 14.04 and Windows 7 but working as expected on Chromium Ubuntu 14.04 and Windows 7. Not sure on OS X.</p>
 
 <p>If you happen to encounter the bug, please post it on issues, so that others can contribute and hopefully someone will fixed it.</p>
 
