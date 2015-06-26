@@ -2,7 +2,7 @@
 
 Thanks to Ryan Glover - <a href="http://themeteorchef.com/">The Meteor Chef</a> for the help in debugging and fixing the bugs.
 
-<p>The original source is coming from George Mcknight <a href="https://youtu.be/arutBQUi1bc" target="_blank">Youtube</a> Meteor Upload and Import CSV tutorial. </p>
+<p>The original source is from George Mcknight <a href="https://youtu.be/arutBQUi1bc" target="_blank">Youtube</a> Meteor Upload and Import CSV tutorial. </p>
 
 <p>Feel free to clone this repo for your own use.</p>
 
@@ -10,6 +10,6 @@ Thanks to Ryan Glover - <a href="http://themeteorchef.com/">The Meteor Chef</a> 
 
 <p>If you happen to encounter the bug, please post it on issues, so that others can contribute and hopefully someone will fixed it.</p>
 
-<p><strong>Disclaimer:</strong>I am not the author of the code, credits to George Mcknight as he is the source and Ryan Glover for fixing significant bugs</p>.
+<p><strong>Disclaimer:</strong>I am not the author of the code, credits to George Mcknight as he is the source and Ryan Glover for fixing significant bugs.</p>
 
 <p>Thanks and Happy coding!</p>
